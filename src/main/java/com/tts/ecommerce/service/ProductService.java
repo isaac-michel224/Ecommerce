@@ -22,7 +22,12 @@ public class ProductService {
         return productRepository.findAll();
     }
 
+    public List<String> findDistinctCategories() {
+        return productRepository.findDistinctCategories();
+    }
+
     public List<String> findDistinctBrands() {
+
         return productRepository.findDistinctBrands();
     }
 

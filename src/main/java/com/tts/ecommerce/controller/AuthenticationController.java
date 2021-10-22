@@ -1,7 +1,7 @@
 package com.tts.ecommerce.controller;
 
 import com.tts.ecommerce.model.User;
-import com.tts.ecommerce.service.UserService;
+import com.tts.ecommerce.service.EndUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -17,7 +17,7 @@ import javax.validation.Valid;
 public class AuthenticationController {
 
     @Autowired
-    private UserService userService;
+    private EndUserService userService;
 
     @GetMapping("/signin")
     public String login() {
